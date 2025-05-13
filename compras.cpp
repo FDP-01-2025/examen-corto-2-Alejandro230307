@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 int main( void ){
-    int edad, talla, prenda;
-    string genero;
+    int edad, talla, prenda, genero;
 
     cout <<"Coloque cual es su edad \n";
     cin >> edad;
@@ -21,18 +20,19 @@ int main( void ){
 
 
     cout <<"Ropa de que genero desea comprar? \n";
-    cout <<"Masculino\n";
-    cout <<"Femenino \n";
-    cout <<"Ambos \n"
+    cout <<"1- Masculino\n";
+    cout <<"2- Femenino \n";
+    cout <<"3- Ambos \n";
     cin >> genero;
-    if (genero == Masculino ){
+    
+    if (genero == 1 ){
         cout <<"Que prenda desea comprar?\n";
         cout <<"1- Camisa Casual: $90 (descuento del 30%).\n";
         cout <<"2- Pantalón Formal: $130 (descuento del 30%).\n";
         cout <<"3- Chaqueta Premium: $900 (descuento del 30%).\n";
         cin >> prenda;
 
-        switch ( prenda)
+        switch ( prenda){
         case 1:
         cout <<"El precio de la camisa casual es de $63\n";
         cout <<"Compra exitosa! Tu saldo restante es de $237 \n";
@@ -47,33 +47,33 @@ int main( void ){
         break;
         default: 
         cout <<"Opcion invalida, vuelve a intentarlo \n";
-    
+        }
     }
-    if (genero == Femenino ){
+    if (genero == 2 ){
         cout <<"Que prenda desea comprar?\n";
         cout <<"1- Blusa Moderna: $80 (descuento del 20%).\n";
         cout <<"2-  Falda Elegante: $110 (descuento del 20%).\n";
         cout <<"3-  Abrigo Premium: $250 (descuento del 20%).\n";
         cin >> prenda;
 
-        switch ( prenda )
+        switch ( prenda ){
         case 1:
         cout <<"El precio de la camisa casual es de $64\n";
         cout <<"Compra exitosa! Tu saldo restante es de $236 \n";
         break;
         case 2:
-        cout <<"Pantalón Formal es de $88\n";
+        cout <<"El precio de la Falda Elegante es de $88\n";
         cout <<"Compra exitosa! Tu saldo restante es de $212 \n";
         break;
         case 3:
-        cout <<"Pantalón Formal es de $200\n";
+        cout <<"El precio de el Abrigo Premium es de $200\n";
         cout <<"Compra exitosa! Tu saldo restante es de $100  \n";
         break;
         default: 
         cout <<"Opcion invalida, vuelve a intentarlo \n";
-    
+        }
     }
-    if (genero == Ambos){
+    if (genero == 3){
         cout <<"Que prenda desea comprar?\n";
         cout <<"1- Camisa Casual: $90 (descuento del 30%).\n";
         cout <<"2- Pantalón Formal: $130 (descuento del 30%).\n";
@@ -84,7 +84,7 @@ int main( void ){
 
         cin >> prenda;
 
-        switch ( prenda )
+        switch ( prenda ){
         case 1:
         cout <<"El precio de la camisa casual es de $64\n";
         cout <<"Compra exitosa! Tu saldo restante es de $236 \n";
@@ -97,23 +97,21 @@ int main( void ){
         cout <<"Pantalón Formal es de $200\n";
         cout <<"Compra exitosa! Tu saldo restante es de $100  \n";
         break;
-        default: 
-        cout <<"Opcion invalida, vuelve a intentarlo \n";
         case 4:
-        cout <<"El precio de la camisa casual es de $63\n";
-        cout <<"Compra exitosa! Tu saldo restante es de $237 \n";
+        cout <<"El precio de la camisa casual es de $64\n";
+        cout <<"Compra exitosa! Tu saldo restante es de $236 \n";
         break;
         case 5:
-        cout <<"Pantalón Formal es de $91\n";
-        cout <<"Compra exitosa! Tu saldo restante es de $209 \n";
+        cout <<"El precio de la Falda Elegante es de $88\n";
+        cout <<"Compra exitosa! Tu saldo restante es de $212 \n";
         break;
         case 6:
-        cout <<"Pantalón Formal es de $603\n";
-        cout <<"Compra Fallida! Saldo insuficiente \n";
+        cout <<"El precio de el Abrigo Premium es de $200\n";
+        cout <<"Compra exitosa! Tu saldo restante es de $100  \n";
         break;
         default: 
         cout <<"Opcion invalida, vuelve a intentarlo \n";
-    
+        }
     }
 
 
